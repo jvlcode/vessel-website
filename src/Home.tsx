@@ -11,13 +11,14 @@ export default function OffshoreCorporateHomepage() {
                 {/* Background Visual */}
                 <div className="absolute inset-0">
                     <picture>
-                        <source media="(max-width:768px)" srcSet="/vessel-mobile.webp" />
+                        <source media="(max-width:768px)" srcSet={`${import.meta.env.BASE_URL}vessel.webp`} />
 
-                        <img
-                            src="/vessel.webp"
-                            alt="Offshore Vessel"
-                            className="w-full h-full object-cover scale-105"
-                        />
+                       <img
+  src={`${import.meta.env.BASE_URL}vessel.webp`}
+  alt="Offshore Vessel"
+  className="w-full h-full object-cover scale-105"
+/>
+
                     </picture>
 
                     {/* Dark cinematic overlay */}

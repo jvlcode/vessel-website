@@ -12,14 +12,15 @@ export default function OffshoreCorporateHomepage() {
                     <picture>
                         <source
                             media="(max-width:768px)"
-                            srcSet="/vessel-mobile.webp"
+                            srcSet={`${import.meta.env.BASE_URL}vessel.webp`}
                         />
 
-                        <img
-                            src="/vessel.webp"
-                            alt="Offshore Vessel"
-                            className="w-full h-full object-cover"
-                        />
+                    <img
+  src={`${import.meta.env.BASE_URL}vessel.webp`}
+  alt="Offshore Vessel"
+  className="w-full h-full object-cover scale-105"
+/>
+
                     </picture>
 
                     {/* Overlay */}

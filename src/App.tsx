@@ -4,7 +4,7 @@ import MarineHomepage from './Home2'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
-  return <BrowserRouter>
+  return <BrowserRouter basename='/vessel-website'>
     <Routes>
       <Route path='/home2' Component={Home} />
       <Route path='/' Component={MarineHomepage} />
